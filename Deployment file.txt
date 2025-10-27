@@ -1,0 +1,23 @@
+NGINX Deployment file 
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: nginx-deployment
+ labels:
+   app: web          #(can be anything)
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+    app: web
+ template:
+   metadata:
+     labels:
+       app: web
+   spec:
+    containers:
+    - name: web
+      image: nginx:1.14     #(can be anything)
+      ports:
+      - containerPort: 80
