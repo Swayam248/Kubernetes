@@ -1,5 +1,5 @@
 # This Service will find and route traffic to all Pods created by the Deployment(Regapp Deployment file) that have app: regapp.
-# Service file for Regapp Deployment file.yaml)
+# Service file for Regapp Deployment (RollingUpdate) file.yaml)
 
 
 apiVersion: v1
