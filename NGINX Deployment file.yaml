@@ -1,4 +1,4 @@
-NGINX Deployment file 
+NGINX Deployment file.yaml
 
 apiVersion: apps/v1
 kind: Deployment
