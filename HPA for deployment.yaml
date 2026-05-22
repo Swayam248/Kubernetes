@@ -8,7 +8,7 @@ spec:
  scaleTargetRef:
    apiVersion: apps/v1
    kind: Deployment
-   name: nginx-deployment # change acc to deployment name, line-5 in deployment file
+   name: nginx-deployment # change accordingly to deployment name, line-4 in deployment file
  minReplicas: 4
  maxReplicas: 10
  metrics:
