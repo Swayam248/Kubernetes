@@ -1,4 +1,4 @@
-HPA for deployment
+HPA for NGINX Deployment file.yaml
 
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
