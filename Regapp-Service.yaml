@@ -1,9 +1,13 @@
+# This Service will find and route traffic to all Pods created by the Deployment(Regapp Deployment file) that have app: regapp.
+# Service file for Regapp Deployment file.yaml)
+
+
 apiVersion: v1
 kind: Service
 metadata:
   name: regapp-service
   labels:
-    app: regapp 
+    app: regapp        #should be the same as Deployment file's app:_______
 spec:
   selector:
     app: regapp 
