@@ -1,0 +1,31 @@
+apiVersion: apps/v1       # API Version
+kind: Deployment          # Resource type
+metadata:                 
+  name: deploy-nginx      # Deployment name
+  labels:
+    app: nginx            # Labels
+
+spec:
+  replicas: 5             # Desired no. of pods
+
+  selector:
+    matchLabels:          # Selects pods with label app = nginx
+      app: nginx
+
+  strategy:
+    type: RollingUpdate   # update strategy
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+
+  template:
+    metadata:            #pod template labels
+      labels:
+        app: nginx
+
+    spec:
+      containers:        # Container Configuration
+      - name: nginx
+        image: nginx:1.25
+        ports:
+        - containerPort: 80
