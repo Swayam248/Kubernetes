@@ -102,7 +102,7 @@
 
 ---
 
-## 5. Troubleshooting (~30%) ⭐ (MOST IMPORTANT)
+## 5. Troubleshooting (IMPORTANT)
 
 ### Application Failures:
 - CrashLoopBackOff  
