@@ -1,1 +1,1 @@
-[Kubernetes Documentation](https://kodekloud.com/studio/labs/kubernetes)
+[Kubernetes Documentation](https://kubernetes.io/docs/home/)
